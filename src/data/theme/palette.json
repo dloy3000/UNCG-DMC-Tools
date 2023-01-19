@@ -1,0 +1,20 @@
+{
+    "colors": {
+        "UNCG-Primary": {
+            "blue": "#0f2044",
+            "gold": "#ffb71b",
+            "silver": "#bec0c2",
+            "white": "#0F0F0F"
+        },
+        "UNCG-Secondary": {
+            "steel": "#a6b0b7",
+            "platinum": "#e5e6e4",
+            "grullo": "#a59c87",
+            "cream": "#c5c29b",
+            "turquoiseGreen": "#92d1b3",
+            "rose": "#4fc2bf",
+            "oceanic": "#00698c",
+            "raspberry": "#a00c30"
+        }
+    }
+}
