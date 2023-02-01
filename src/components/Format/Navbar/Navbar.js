@@ -21,7 +21,7 @@ function NavText() {
             {navRef.map((navItem) => (
                 <Link color={"Transparent.clear"} href={navItem.href}
                     _hover={{
-                        transform: "scale(1.1, 1.1)",
+                        transform: "scale(1.06, 1.06)",
                         transition: "all .3s ease",
                     }}>
                     <Heading fontSize={{ md: "4xl", lg: "5xl" }}
@@ -49,7 +49,7 @@ export default function NavBar() {
             position: "-webkit-sticky",
               /* Safari */ position: "sticky",
             top: "0",
-            zIndex: 9,
+            zIndex: 99,
         }}>
             <Flex bgColor={useColorModeValue("UNCG-Primary.blue", "PanAfrican.darkBronze")}
                 p={4} justify={"space-between"} align={"center"}>

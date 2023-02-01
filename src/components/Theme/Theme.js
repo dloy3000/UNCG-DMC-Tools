@@ -37,7 +37,7 @@ const styles = {
                 outline: mode("2px solid #0f2044", "2px solid #510000")(props)
             },
             "::-webkit-scrollbar-track": {
-                background: mode("#0f2044", "#1F1D1B")(props)
+                background: mode("#0f2044", "#1F1D1B")(props),
             },
             "::-webkit-scrollbar-thumb": {
                 background: mode("#ffb71b", "#F7F0DF")(props),
