@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import navref from "@/data/navigation/navref.json";
 
+//Navitems clicked to reach other pages.
 function NavText() {
     const { navRef } = navref;
     return (
@@ -39,6 +40,7 @@ function NavText() {
     )
 }
 
+//Main navbar.
 export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();
 
