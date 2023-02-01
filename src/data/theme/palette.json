@@ -4,7 +4,7 @@
             "blue": "#0f2044",
             "gold": "#ffb71b",
             "silver": "#bec0c2",
-            "white": "#0F0F0F"
+            "white": "#fafafa"
         },
         "UNCG-Secondary": {
             "steel": "#a6b0b7",
@@ -15,6 +15,22 @@
             "rose": "#4fc2bf",
             "oceanic": "#00698c",
             "raspberry": "#a00c30"
+        },
+        "PanAfrican": {
+            "darkBronze": "#1F1D1B",
+            "legion": "#121214",
+            "blood": "#510000",
+            "lava": "#CF0921",
+            "spring": "#009850",
+            "cadmium": "#006B3D",
+            "gold": "#CAA80C",
+            "antiflash": "#F0F0F0",
+            "ivory": "#F7F0DF",
+            "mudbrick": "#E5CFAF",
+            "grullo": "#A8967C"
+        },
+        "Transparent": {
+            "clear": "rgba(0,0,0,0)"
         }
     }
 }

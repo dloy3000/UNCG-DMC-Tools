@@ -93,17 +93,21 @@ a {
   }
 }
 
+body {
+  background-color: #bec0c2;
+}
+
 /* Scroll bar stylings */
 ::-webkit-scrollbar {
   width: 14px;
   height: 8px;
   padding: 4px;
-  outline: 2px solid #bec0c2;
+  outline: 2px solid #0f2044;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #bec0c2;
+  background: #0f2044;
 }
 
 /* Handle */
@@ -114,5 +118,5 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5c29b;
+  background: #bec0c2;
 }

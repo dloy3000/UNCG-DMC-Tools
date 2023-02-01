@@ -1,8 +1,16 @@
 {
     "navRef": [
         {
-            "label": "template",
-            "href": "template"
+            "label": "Home",
+            "href": "/"
+        },
+        {
+            "label": "Assets",
+            "href": "/assets"
+        },
+        {
+            "label": "Inkagulator",
+            "href": "/inkcalculator"
         }
     ]
 }
