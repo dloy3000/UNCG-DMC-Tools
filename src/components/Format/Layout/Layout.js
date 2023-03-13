@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
             <Head>
                 <title>UNCG Libraries | Digital Media Commons Tools</title>
                 <link rel="icon" href="image/logo/Lakansyel-Logo5.png" />
-                <meta name="description" content="Catch Unseen Movements" />
+                <meta name="description" content="Simple Library Tools" />
             </Head>
             <ColorModeScript initialColorMode={'theme.config.initialColorMode'} />
             <NavBar />
