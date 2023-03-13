@@ -16,20 +16,26 @@ import navref from "@/data/navigation/navref.json";
 //Navitems clicked to reach other pages.
 function NavText() {
     const { navRef } = navref;
+
+    const font = useColorModeValue("Aqua", "Zilap");
+    const headerColor = useColorModeValue("UNCG-Primary.gold", "PanAfrican.ivory");
+    const textColor = useColorModeValue("UNCG-Primary.silver", "PanAfrican.spring");
+
+
     return (
         <HStack>
             {navRef.map((navItem) => (
-                <Link color={"Transparent.clear"} href={navItem.href}
+                <Link key={navItem.label} color={"Transparent.clear"} href={navItem.href}
                     _hover={{
                         transform: "scale(1.06, 1.06)",
                         transition: "all .3s ease",
                     }}>
                     <Heading fontSize={{ md: "4xl", lg: "5xl" }}
                         fontWeight={"light"}
-                        fontFamily={useColorModeValue("Aqua", "Zilap")}
-                        color={useColorModeValue("UNCG-Primary.gold", "PanAfrican.ivory")} px={2}
+                        fontFamily={font}
+                        color={headerColor} px={2}
                         _hover={{
-                            textColor: useColorModeValue("UNCG-Primary.silver", "PanAfrican.spring"),
+                            textColor: textColor,
                             transition: "all .3s ease",
                         }}>
                         {navItem.label}
@@ -44,6 +50,10 @@ function NavText() {
 export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();
 
+    const bgColor = useColorModeValue("UNCG-Primary.blue", "PanAfrican.darkBronze");
+    const borderColor = useColorModeValue("UNCG-Primary.gold", "PanAfrican.blood");
+    const avatar = useColorModeValue("image/assets/buttons/DMC_Button-Generic.png", "image/assets/buttons/DMC_Button-Sudan.png");
+
     return (
         <Box sx={{
             position: "-webkit-sticky",
@@ -51,10 +61,10 @@ export default function NavBar() {
             top: "0",
             zIndex: 99,
         }}>
-            <Flex bgColor={useColorModeValue("UNCG-Primary.blue", "PanAfrican.darkBronze")}
+            <Flex bgColor={bgColor}
                 p={4} justify={"space-between"} align={"center"}>
                 <Avatar name={"button"}
-                    src={useColorModeValue("image/assets/buttons/DMC_Button-Generic.png", "image/assets/buttons/DMC_Button-Sudan.png")}
+                    src={avatar}
                     boxSize={{ md: 12, lg: 16 }} onClick={toggleColorMode}
                     _hover={{
                         bgColor: "Transparent.clear",
@@ -67,7 +77,7 @@ export default function NavBar() {
                     <NavText />
                 </Box>
             </Flex>
-            <Flex bgColor={useColorModeValue("UNCG-Primary.gold", "PanAfrican.blood")} minH={1} />
+            <Flex bgColor={borderColor} minH={1} />
         </Box >
     )
 }

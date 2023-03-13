@@ -35,6 +35,14 @@ export default function InputLite() {
     const handleInk = (e) => setInk(e.target.value);
     const handlePaper = (e) => setPaper(e.target.value);
 
+    const bgColor = useColorModeValue("UNCG-Primary.silver", "PanAfrican.legion");
+    const headerColor = useColorModeValue("UNCG-Primary.blue", "PanAfrican.gold");
+    const textColor = useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory");
+    const boxColor = useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze");
+    const borderColor = useColorModeValue("UNCG-Secondary.blue", "PanAfrican.mudbrick");
+    const dividerColor = useColorModeValue("UNCG-Primary.blue", "PanAfrican.mudbrick");
+
+
     //Reload calculation upon input change.
     useEffect(() => {
         setInkCost(length * width * ink);
@@ -47,7 +55,7 @@ export default function InputLite() {
 
     return (
         <Box>
-            <Flex bgColor={useColorModeValue("UNCG-Primary.silver", "PanAfrican.legion")}
+            <Flex bgColor={bgColor}
                 justify={"center"} textAlign={"left"} py={{ md: 8, lg: 12 }}>
                 <Grid gap={{ md: 2, lg: 8 }}
                     templateAreas={
@@ -62,7 +70,7 @@ export default function InputLite() {
                         <Heading fontSize={headingSize}
                             fontWeight={"light"}
                             fontFamily={heading}
-                            color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.gold")}>
+                            color={headerColor}>
                             Simple Print Calculator
                         </Heading>
                     </GridItem>
@@ -70,7 +78,7 @@ export default function InputLite() {
                         <Text fontSize={bodySize}
                             fontWeight={"medium"}
                             fontFamily={body}
-                            color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                            color={textColor}
                             maxW={{ md: "400px", lg: "520px" }}>
                             This is a simple calculator to calculate the price of prints based on dimensions and paper use.
                         </Text>
@@ -82,19 +90,19 @@ export default function InputLite() {
                                 <Text fontSize={bodySize}
                                     fontWeight={"medium"}
                                     fontFamily={body}
-                                    color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                    color={textColor}
                                     maxW={{ md: "400px", lg: "520px" }}>
                                     Length
                                 </Text>
                             </FormLabel>
-                            <Input bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                            <Input bgColor={boxColor}
                                 type={"number"} value={length} onChange={handleLength} />
                             {length !== "" ? (
                                 <FormHelperText>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Enter Length in inches.
                                     </Text>
@@ -104,7 +112,7 @@ export default function InputLite() {
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Length is required.
                                     </Text>
@@ -119,19 +127,19 @@ export default function InputLite() {
                                 <Text fontSize={bodySize}
                                     fontWeight={"medium"}
                                     fontFamily={body}
-                                    color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                    color={textColor}
                                     maxW={{ md: "400px", lg: "520px" }}>
                                     Width
                                 </Text>
                             </FormLabel>
-                            <Input bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                            <Input bgColor={boxColor}
                                 type={"number"} value={width} onChange={handleWidth} />
                             {width !== "" ? (
                                 <FormHelperText>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Enter Width in inches.
                                     </Text>
@@ -141,7 +149,7 @@ export default function InputLite() {
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Width is required.
                                     </Text>
@@ -156,19 +164,19 @@ export default function InputLite() {
                                 <Text fontSize={bodySize}
                                     fontWeight={"medium"}
                                     fontFamily={body}
-                                    color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                    color={textColor}
                                     maxW={{ md: "400px", lg: "520px" }}>
                                     Ink
                                 </Text>
                             </FormLabel>
-                            <Input bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                            <Input bgColor={boxColor}
                                 type={"number"} value={ink} onChange={handleInk} />
                             {ink !== "" ? (
                                 <FormHelperText>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Enter Ink cost.
                                     </Text>
@@ -178,7 +186,7 @@ export default function InputLite() {
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Ink is required.
                                     </Text>
@@ -193,19 +201,19 @@ export default function InputLite() {
                                 <Text fontSize={bodySize}
                                     fontWeight={"medium"}
                                     fontFamily={body}
-                                    color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                    color={textColor}
                                     maxW={{ md: "400px", lg: "520px" }}>
                                     Paper
                                 </Text>
                             </FormLabel>
-                            <Input bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                            <Input bgColor={boxColor}
                                 type={"number"} value={paper} onChange={handlePaper} />
                             {paper !== "" ? (
                                 <FormHelperText>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Enter Paper cost.
                                     </Text>
@@ -215,7 +223,7 @@ export default function InputLite() {
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Paper is required.
                                     </Text>
@@ -225,15 +233,15 @@ export default function InputLite() {
                     </GridItem>
 
                     <GridItem area={"InkCost"}>
-                        <Box bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                        <Box bgColor={boxColor}
                             p={{ md: 2, lg: 4 }} borderRadius={12} border={"1px"} textAlign={"center"}
-                            borderColor={useColorModeValue("UNCG-Secondary.blue", "PanAfrican.mudbrick")}>
+                            borderColor={borderColor}>
                             <Stat>
                                 <StatLabel>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Estimated Ink Cost
                                     </Text>
@@ -242,7 +250,7 @@ export default function InputLite() {
                                     <Text fontSize={statSize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         ${inkCost.toFixed(2)}
                                     </Text>
@@ -252,15 +260,15 @@ export default function InputLite() {
                     </GridItem>
 
                     <GridItem area={"FeetLength"}>
-                        <Box bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                        <Box bgColor={boxColor}
                             p={{ md: 2, lg: 4 }} borderRadius={12} border={"1px"} textAlign={"center"}
-                            borderColor={useColorModeValue("UNCG-Secondary.blue", "PanAfrican.mudbrick")}>
+                            borderColor={borderColor}>
                             <Stat>
                                 <StatLabel>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Paper Length in Feet
                                     </Text>
@@ -269,7 +277,7 @@ export default function InputLite() {
                                     <Text fontSize={statSize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         {feetLength.toFixed(2)}
                                     </Text>
@@ -279,15 +287,15 @@ export default function InputLite() {
                     </GridItem>
 
                     <GridItem area={"PaperCost"}>
-                        <Box bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                        <Box bgColor={boxColor}
                             p={{ md: 2, lg: 4 }} borderRadius={12} border={"1px"} textAlign={"center"}
-                            borderColor={useColorModeValue("UNCG-Secondary.blue", "PanAfrican.mudbrick")}>
+                            borderColor={borderColor}>
                             <Stat>
                                 <StatLabel>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Estimated Paper Cost
                                     </Text>
@@ -296,7 +304,7 @@ export default function InputLite() {
                                     <Text fontSize={statSize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         ${paperCost.toFixed(2)}
                                     </Text>
@@ -306,15 +314,15 @@ export default function InputLite() {
                     </GridItem>
 
                     <GridItem area={"TotalCost"}>
-                        <Box bgColor={useColorModeValue("UNCG-Secondary.steel", "PanAfrican.darkBronze")}
+                        <Box bgColor={boxColor}
                             p={{ md: 2, lg: 4 }} borderRadius={12} border={"1px"} textAlign={"center"}
-                            borderColor={useColorModeValue("UNCG-Secondary.blue", "PanAfrican.mudbrick")}>
+                            borderColor={borderColor}>
                             <Stat>
                                 <StatLabel>
                                     <Text fontSize={bodySize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         Estimated Final Cost
                                     </Text>
@@ -323,7 +331,7 @@ export default function InputLite() {
                                     <Text fontSize={statSize}
                                         fontWeight={"medium"}
                                         fontFamily={body}
-                                        color={useColorModeValue("UNCG-Primary.blue", "PanAfrican.ivory")}
+                                        color={textColor}
                                         maxW={{ md: "400px", lg: "520px" }}>
                                         ${(paperCost + inkCost).toFixed(2)}
                                     </Text>
@@ -332,7 +340,7 @@ export default function InputLite() {
                         </ Box>
                     </GridItem>
                     <GridItem py={{ md: 4, lg: 12 }} colSpan={2}>
-                        <Divider height={"1px"} bgColor={useColorModeValue("UNCG-Primary.blue", "PanAfrican.mudbrick")} />
+                        <Divider height={"1px"} bgColor={dividerColor} />
                     </GridItem>
                 </Grid>
             </Flex>
