@@ -17,7 +17,8 @@ export default function HomePage() {
   const myRef = useRef();
 
   return (
-    <Box>
+    <Box bgColor={"UNCG-Primary.Silver"}>
+      <InputLite />
     </Box>
   )
 }
