@@ -1,14 +1,6 @@
 {
     "navRef": [
         {
-            "label": "Home",
-            "href": "/"
-        },
-        {
-            "label": "Assets",
-            "href": "/assets"
-        },
-        {
             "label": "Inkagulator",
             "href": "/inkcalculator"
         }

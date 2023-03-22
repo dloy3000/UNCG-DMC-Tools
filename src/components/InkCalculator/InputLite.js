@@ -79,7 +79,7 @@ export default function InputLite() {
                             fontWeight={"medium"}
                             fontFamily={body}
                             color={textColor}
-                            maxW={{ md: "400px", lg: "520px" }}>
+                            maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                             This is a simple calculator to calculate the price of prints based on dimensions and paper use.
                         </Text>
                     </GridItem>
@@ -91,7 +91,7 @@ export default function InputLite() {
                                     fontWeight={"medium"}
                                     fontFamily={body}
                                     color={textColor}
-                                    maxW={{ md: "400px", lg: "520px" }}>
+                                    maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                     Length
                                 </Text>
                             </FormLabel>
@@ -103,7 +103,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Enter Length in inches.
                                     </Text>
                                 </FormHelperText>
@@ -113,7 +113,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Length is required.
                                     </Text>
                                 </FormErrorMessage>
@@ -128,7 +128,7 @@ export default function InputLite() {
                                     fontWeight={"medium"}
                                     fontFamily={body}
                                     color={textColor}
-                                    maxW={{ md: "400px", lg: "520px" }}>
+                                    maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                     Width
                                 </Text>
                             </FormLabel>
@@ -140,7 +140,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Enter Width in inches.
                                     </Text>
                                 </FormHelperText>
@@ -150,7 +150,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Width is required.
                                     </Text>
                                 </FormErrorMessage>
@@ -165,7 +165,7 @@ export default function InputLite() {
                                     fontWeight={"medium"}
                                     fontFamily={body}
                                     color={textColor}
-                                    maxW={{ md: "400px", lg: "520px" }}>
+                                    maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                     Ink
                                 </Text>
                             </FormLabel>
@@ -177,7 +177,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Enter Ink cost.
                                     </Text>
                                 </FormHelperText>
@@ -187,7 +187,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Ink is required.
                                     </Text>
                                 </FormErrorMessage>
@@ -202,7 +202,7 @@ export default function InputLite() {
                                     fontWeight={"medium"}
                                     fontFamily={body}
                                     color={textColor}
-                                    maxW={{ md: "400px", lg: "520px" }}>
+                                    maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                     Paper
                                 </Text>
                             </FormLabel>
@@ -214,7 +214,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Enter Paper cost.
                                     </Text>
                                 </FormHelperText>
@@ -224,7 +224,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Paper is required.
                                     </Text>
                                 </FormErrorMessage>
@@ -242,7 +242,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Estimated Ink Cost
                                     </Text>
                                 </StatLabel>
@@ -251,7 +251,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         ${inkCost.toFixed(2)}
                                     </Text>
                                 </StatNumber>
@@ -269,7 +269,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Paper Length in Feet
                                     </Text>
                                 </StatLabel>
@@ -278,7 +278,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         {feetLength.toFixed(2)}
                                     </Text>
                                 </StatNumber>
@@ -296,7 +296,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Estimated Paper Cost
                                     </Text>
                                 </StatLabel>
@@ -305,7 +305,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         ${paperCost.toFixed(2)}
                                     </Text>
                                 </StatNumber>
@@ -323,7 +323,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         Estimated Final Cost
                                     </Text>
                                 </StatLabel>
@@ -332,7 +332,7 @@ export default function InputLite() {
                                         fontWeight={"medium"}
                                         fontFamily={body}
                                         color={textColor}
-                                        maxW={{ md: "400px", lg: "520px" }}>
+                                        maxW={{ base: "380px", md: "400px", lg: "520px" }}>
                                         ${(paperCost + inkCost).toFixed(2)}
                                     </Text>
                                 </StatNumber>

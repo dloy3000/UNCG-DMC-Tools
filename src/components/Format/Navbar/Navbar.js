@@ -21,7 +21,6 @@ function NavText() {
     const headerColor = useColorModeValue("UNCG-Primary.gold", "PanAfrican.ivory");
     const textColor = useColorModeValue("UNCG-Primary.silver", "PanAfrican.spring");
 
-
     return (
         <HStack>
             {navRef.map((navItem) => (
@@ -62,10 +61,10 @@ export default function NavBar() {
             zIndex: 99,
         }}>
             <Flex bgColor={bgColor}
-                p={4} justify={"space-between"} align={"center"}>
+                p={{ base: 2, md: 4 }} justify={"space-between"} align={"center"}>
                 <Avatar name={"button"}
                     src={avatar}
-                    boxSize={{ md: 12, lg: 16 }} onClick={toggleColorMode}
+                    boxSize={{ base: 12, lg: 16 }} onClick={toggleColorMode}
                     _hover={{
                         bgColor: "Transparent.clear",
                         transform: "scale(1.1, 1.1)",
@@ -73,7 +72,7 @@ export default function NavBar() {
                         src: "image/logo/DMC-Logo_Painted-Silver.png",
                     }}
                 />
-                <Box>
+                <Box display={{ base: "none", md: "flex" }}>
                     <NavText />
                 </Box>
             </Flex>
