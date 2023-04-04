@@ -5,6 +5,7 @@ import {
   Text
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import InputLite from "@/components/InkCalculator/InputLite";
 
 export default function HomePage() {
   // enable smooth scrolling effect
